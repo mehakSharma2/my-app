@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+Student Registration App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React + TypeScript web application where students can register by filling out a form with their details (Name, Email, Age, and Course). After successful submission, the user can view all registered students on a Details Page.
 
-## Available Scripts
+This project is designed as a beginner-friendly practice application to demonstrate:
 
-In the project directory, you can run:
+Form handling in React
 
-### `npm start`
+State management using useState
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Navigation between pages using React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Displaying data in a table format
 
-### `npm test`
+Conditional rendering (showing success message after submission)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🚀 Features
 
-### `npm run build`
+Student Registration Form with validation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Success message after form submission
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+"Show Details" button visible only after submission
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Details Page to view all registered students in a clean table
 
-### `npm run eject`
+Built with React, TypeScript, and React Router
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React (Frontend library)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+TypeScript (Static typing)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React Router DOM (Page navigation)
 
-## Learn More
+Tailwind CSS / Basic CSS (Styling)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📂 Project Structure
+src/
+  components/
+    DataTable/
+      DataTable.tsx       # Displays student details in a table
+    InputField/
+      InputField.tsx      # Reusable input component (optional)
+  pages/
+    FormPage.tsx          # Student registration form
+    DetailsPage.tsx       # Displays list of registered students
+  App.tsx                 # Main app with routes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+⚡ How It Works
 
-### Code Splitting
+Open the app → You see the Student Registration Form.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Fill in details → Click Submit.
 
-### Analyzing the Bundle Size
+A Success Message appears with a Show Details button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Clicking Show Details → navigates to /details and shows all students.
 
-### Making a Progressive Web App
+📸 Demo Flow (Steps)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start at: http://localhost:3000/
 
-### Advanced Configuration
+Fill form → Submit ✅
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Success Message shown → Button → Navigate to Details Page
 
-### Deployment
+🏃‍♂️ Getting Started
+1. Clone the repository
+git clone command
+cd my-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. Install dependencies
+npm install
 
-### `npm run build` fails to minify
+3. Run the project
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+App runs on http://localhost:3000/.
+
+🎯 Learning Outcomes (Good for Resume)
+
+Hands-on experience with React + TypeScript
+
+Implemented Form Validation & State Management
+
+Practiced React Router Navigation
+
+Used Conditional Rendering to control UI flow
+
+Created a simple Data Table to display records
