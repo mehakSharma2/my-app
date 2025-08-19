@@ -1,16 +1,16 @@
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
   stories: [
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"  // 👈 just look for stories
+    "../src/**/*.stories.@(js|jsx|ts|tsx)"  
   ],
   addons: [
     "@storybook/addon-links",
-    "@storybook/addon-essentials"  // includes docs, controls, actions etc.
+    "@storybook/addon-essentials"  
   ],
   framework: {
     name: "@storybook/react-webpack5",
     options: {}
   },
-  staticDirs: ["../public"], // 👈 fixed path
+  staticDirs: ["../public"],
 };
 export default config;

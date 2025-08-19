@@ -34,7 +34,6 @@ const FormPage: React.FC<FormPageProps> = ({ students, setStudents }) => {
     setStudents([...students, newStudent]);
     setSubmitted(true);
 
-    // clear inputs
     setName("");
     setEmail("");
     setAge("");
@@ -45,7 +44,6 @@ const FormPage: React.FC<FormPageProps> = ({ students, setStudents }) => {
     <div style={{ padding: "20px", textAlign: "center" }}>
       <h2>Student Registration Form</h2>
 
-      {/* Show form before submit */}
       {!submitted && (
         <form onSubmit={handleSubmit}>
           <div>
@@ -89,7 +87,7 @@ const FormPage: React.FC<FormPageProps> = ({ students, setStudents }) => {
         </form>
       )}
 
-      {/* Show success message and details button after submit */}
+     
       {submitted && (
         <div>
           <p style={{ color: "green", fontWeight: "bold" }}>
