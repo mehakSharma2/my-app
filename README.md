@@ -2,7 +2,7 @@ Student Registration App
 
 A simple React + TypeScript web application where students can register by filling out a form with their details (Name, Email, Age, and Course). After successful submission, the user can view all registered students on a Details Page.
 
-This project is designed as a beginner-friendly practice application to demonstrate:
+This project is designed as a beginner-friendly practice app to demonstrate:
 
 Form handling in React
 
@@ -10,31 +10,31 @@ State management using useState
 
 Navigation between pages using React Router
 
-Displaying data in a table format
+Conditional rendering (showing success message only after submission)
 
-Conditional rendering (showing success message after submission)
+Data display in a table format
 
 🚀 Features
 
-Student Registration Form with validation
+Student Registration Form with basic validation
 
-Success message after form submission
+Success message appears after submission
 
-"Show Details" button visible only after submission
+“Show Details” button visible only after successful submission
 
-Details Page to view all registered students in a clean table
+Details Page with a clean table of all registered students
 
 Built with React, TypeScript, and React Router
 
 🛠️ Tech Stack
 
-React (Frontend library)
+React – Frontend framework
 
-TypeScript (Static typing)
+TypeScript – Type safety and cleaner code
 
-React Router DOM (Page navigation)
+React Router DOM – Navigation between pages
 
-Tailwind CSS / Basic CSS (Styling)
+Tailwind CSS / Plain CSS – Styling
 
 📂 Project Structure
 src/
@@ -42,52 +42,51 @@ src/
     DataTable/
       DataTable.tsx       # Displays student details in a table
     InputField/
-      InputField.tsx      # Reusable input component (optional)
+      InputField.tsx      # Reusable input field component
   pages/
     FormPage.tsx          # Student registration form
     DetailsPage.tsx       # Displays list of registered students
-  App.tsx                 # Main app with routes
+  App.tsx                 # Main app with routing setup
 
 ⚡ How It Works
 
-Open the app → You see the Student Registration Form.
+Start at / → Student Registration Form
 
-Fill in details → Click Submit.
+Fill in details → Click Submit
 
-A Success Message appears with a Show Details button.
+✅ Success message is displayed + Show Details button appears
 
-Clicking Show Details → navigates to /details and shows all students.
+Clicking Show Details → navigates to /details → shows registered students in a table
 
-📸 Demo Flow (Steps)
+📸 Demo Flow
 
-Start at: http://localhost:3000/
+Homepage → Fill out the form
 
-Fill form → Submit ✅
+Submit → Success message shown
 
-Success Message shown → Button → Navigate to Details Page
+Show Details → Table with student data
 
-🏃‍♂️ Getting Started
+🏃 Getting Started
 1. Clone the repository
-git clone command
+git clone <repo-url>
 cd my-app
 
 2. Install dependencies
 npm install
 
-3. Run the project
+3. Run the app
 npm start
 
 
-App runs on http://localhost:3000/.
 
-🎯 Learning Outcomes (Good for Resume)
+🎯 Learning Outcomes
 
-Hands-on experience with React + TypeScript
+Learned React + TypeScript fundamentals
 
-Implemented Form Validation & State Management
+Implemented form validation and state management
 
-Practiced React Router Navigation
+Practiced routing and conditional rendering
 
-Used Conditional Rendering to control UI flow
+Displayed tabular data with a DataTable component
 
-Created a simple Data Table to display records
+Built a fresher-level full React app
